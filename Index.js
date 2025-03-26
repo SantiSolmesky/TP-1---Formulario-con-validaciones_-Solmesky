@@ -29,7 +29,7 @@ function validarEmail() {
 
 function validarPassword()
 {
-    var password = document.getElementById("password");
+    var password = document.getElementById("password1");
     var errorDiv = document.getElementById("error");
 
 
@@ -48,12 +48,13 @@ function comprobarPasswordIguales()
     var password = document.getElementById("password1");
     var segundaPassword = document.getElementById("password2");
     var mensaje = document.getElementById("mensaje")
-    if(password1 == password2)
+    if(password != segundaPassword)
     {
-        mensaje.innerText = "";
+        mensaje.innerText = "Las contraseñas tiene que ser iguales";
+       
     }
     else{
-        mensaje.innerText = "Las contraseñas tiene que ser iguales";
+        mensaje.innerText = "";
     }
    
 }
