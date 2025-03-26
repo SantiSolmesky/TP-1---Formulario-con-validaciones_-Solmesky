@@ -9,9 +9,12 @@
     <form >
         Nombre <input type="text" id = "nombre" onkeyup="comprobarCantidadCaracteres()">
         <div id = "error"></div>
-        Email <input type="mail">
-        Contraseña <input type="password">
-        Confirmar contaseña <input type="password">
+        Email <input type="email" id = "mail" onkeyup="validarEmail()" >
+        <div id = "mensaje"></div>
+        Contraseña <input type="password1" onkeyup="validarPassword()">
+        <div id = "error"></div>
+        Confirmar contaseña <input type="password2" >
+        <div id = "mensaje"></div>
         <input type="submit">
     </form>
    <script src="Index.js"></script>
