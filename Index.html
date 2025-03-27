@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <form >
-        Nombre <input type="text" id = "nombre" onkeyup="comprobarCantidadCaracteres()">
+        Nombre <input type="text" id = "nombre" onkeyup="comprobarCantidadCaracteres()" placeholder="Nombre">
         <div id = "error"></div>
-        Email <input type="email" id = "mail" onkeyup="validarEmail()" >
+        Email <input type="email" id = "mail" onkeyup="validarEmail()" placeholder="Email">
         <div id = "mensaje"></div>
-        Contraseña <input type="password" id ="password1" onkeyup="validarPassword()">
-        <div id = "error"></div>
-        Confirmar contaseña <input type="password" id="password2" >
+        Contraseña <input type="password" id ="password1" onkeyup="validarPassword()" placeholder="Contraseña">
+        <div id = "error2"></div>
+        Confirmar contaseña <input type="password" id="password2" placeholder="Confirmar Contraseña" >
         <div id = "mensaje"></div>
-        <input type="submit">
+        <button onclick="validarFormulario()">Enviar</button>
     </form>
    <script src="Index.js"></script>
 </body>
